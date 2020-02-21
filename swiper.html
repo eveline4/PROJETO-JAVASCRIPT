@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROJETO JAVASCRIPT</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style >
+        section {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            height: 400px;
+            background: rgb(8, 8, 8);
+            justify-content: center;
+            align-items: center;
+            font: 88px Arial
+        }
+
+        .h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(96, 167, 25);
+        }
+        .swiper-pagination-bullet-active {
+            background: rgb(247, 243, 243);
+        }
+        .img{
+            height: 200px;
+            width: 200px;
+        }
+        #h{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!--slide-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/cap2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/cap6.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/ut3.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>    
+        </div>
+  <!--fim-->
+  
+        <!--começo zoom-->
+        <br>
+        
+        <h1 class="h1">MOLETONS RICK AND MORTY</h1>
+        <img width="250" class="img" data-zoom-image="./images/mol2.jpg" src="./images/mol2.jpg"  alt="">
+        <img width="250" class="img" data-zoom-image="./images/mol3.jpg" src="./images/mol3.jpg"  alt="">
+        <img width="250" class="img" data-zoom-image="./images/mol4.jpg" src="./images/mol4.jpg"  alt="">
+        <img width="250" class="img" data-zoom-image="./images/mol5.jpg" src="./images/mol5.jpg"  alt="">
+        <img width="250" class="img" data-zoom-image="./images/mol6.jpg" src="./images/mol6.jpg"  alt="">
+        <img width="250" class="img" data-zoom-image="./images/mol7.jpg" src="./images/mol7.jpg"  alt="">
+        
+        <script src="./js/jquery-1.8.3.min.js"></script>
+        <script src="./js/jquery.elevatezoom.js"></script>
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <script>
+            $('img').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+       }); 
+        </script>
+        
+        <!--final zoom-->
+
+        <br>
+        <!--part2-->
+        <h1 class="h1">CAMISAS</h1>
+        <a href="images/blu1.jpg" 
+    data-title="PRECO: 99,90" 
+    data-lightbox="photo1">
+        <img src="images/blu1.jpg" 
+        width="170" alt="">
+    </a>
+    <a href="images/blu2.jpg" 
+    data-title="PRECO: 99,90"  
+    data-lightbox="photo1">
+        <img src="images/blu2.jpg" width="170" alt="">
+    </a>
+    <a href="images/blu3.jpg" 
+    data-title="PRECO: 99,90"  
+    data-lightbox="photo1">
+        <img src="images/blu3.jpg" width="170" alt="">
+    </a>
+    <a href="images/blu4.jpg" 
+    data-title="PRECO: 99,90"  
+    data-lightbox="photo1">
+        <img src="images/blu4.jpg" width="170" alt="">
+    </a>
+    <a href="images/blu7.jpg" 
+    data-title="PRECO: 99,90" 
+    data-lightbox="photo1">
+        <img src="images/blu7.jpg" width="170" alt="">
+    </a>
+    <a href="images/blu8.jpg" 
+    data-title="PRECO: 99,90" 
+    data-lightbox="photo1">
+        <img src="images/blu8.jpg" width="170" alt="">
+    </a>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script> 
+    <script src="js/lightbox.min.js"></script> 
+     <!-- final part2-->
+
+     <!--canecas-->
+     
+     <h1 class="h1">CANECAS</h1>
+     <a href="images/caneca1.jpg" 
+ data-title="PRECO: 99,90" 
+ data-lightbox="photo1">
+     <img src="images/caneca1.jpg" 
+     width="170" alt="">
+ </a>
+ <a href="images/caneca7.jpg" 
+ data-title="PRECO: 99,90"  
+ data-lightbox="photo1">
+     <img src="images/caneca7.jpg" width="170" alt="">
+ </a>
+ <a href="images/caneca3.jpg" 
+ data-title="PRECO: 99,90"  
+ data-lightbox="photo1">
+     <img src="images/caneca3.jpg" width="170" alt="">
+ </a>
+ <a href="images/caneca4.jpg" 
+ data-title="PRECO: 99,90"  
+ data-lightbox="photo1">
+     <img src="images/caneca4.jpg" width="170" alt="">
+ </a>
+ <a href="images/caneca5.jpg" 
+ data-title="PRECO: 99,90" 
+ data-lightbox="photo1">
+     <img src="images/caneca5.jpg" width="170" alt="">
+ </a>
+ <a href="images/caneca6.jpg" 
+ data-title="PRECO: 99,90" 
+ data-lightbox="photo1">
+     <img src="images/caneca6.jpg" width="170" height="179" alt="">
+ </a>
+
+ <script src="js/lightbox-plus-jquery.min.js"></script> 
+ <script src="js/lightbox.min.js"></script> 
+  <!-- final canecas-->
+
+        <!--TEXTO-->
+        
+        <section class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="2s">
+         <h1 id="h">PROMOÇÃO 2020 NÃO PERCA!</h1>
+            </section>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init()
+    </script>
+   
+        <!--FIM DO TEXTO-->
+        
+        <br>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination:{
+                el: '.swiper-pagination',
+                autoHeight: true
+            }
+        })
+    
+    </script>
+</body>
+</html>
